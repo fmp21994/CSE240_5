@@ -191,7 +191,6 @@ void sort(char* email, char* name, education level, int phone)
                 directory[j].phone = directory[j - 1].phone;
                 directory[j].degree = directory[j - 1].degree;
                 j--;
-                
             }
             strcpy(directory[i].name, name);
             strcpy(directory[i].email, email);
@@ -231,7 +230,7 @@ int search_person() {      // print phone and email via name
     
     printf("Please enter the name to be searched for:\n");
     scanf("%s", sname); 	//sname is an array, no & needed
-
+    
     while (p < pe) {
         if (strcmp(sname,p->name) == 0) {
             
